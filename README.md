@@ -24,12 +24,12 @@ Studies about the CSS flexbox layout.
 #### Lista de Exercícios 4 (Flexbox) - Questão 2
 The proposal of the exercise below was to copy an existing website interface and I chose YouTube for it. As the focus was to mimic the visual interface, the webpage is purely visual (HTML and CSS only) and there are no working functionalities.
 
-![Flexbox gif 1](./demonstration-gifs/flexbox-questao-2.gif)
+![Flexbox gif 1](./gifs-demonstracao/flexbox-questao-2.gif)
 
 #### Lista de Exercícios 4 (Flexbox) - Questão 5
 I developed the code below to test (almost) all of the flexbox properties for both "parent" (flex container) and "children" (flex items).
 
-![Flexbox gif 2](./demonstration-gifs/flexbox-questao-5.gif)
+![Flexbox gif 2](./gifs-demonstracao/flexbox-questao-5.gif)
 
 ## Grid Demonstration
 Studies about the CSS Grid layout. 
@@ -37,14 +37,14 @@ Studies about the CSS Grid layout.
 #### Lista de Exercícios 5 (Grid) - Questão 2
 The objective of the exercise below was to develop a generic website layout utilizing CSS grid property.
 
-![Grid gif](./demonstration-gifs/grid-questao-2.gif)
+![Grid gif](./gifs-demonstracao/grid-questao-2.gif)
 
 ## Calculator
 The calculator below was developed as part of one of the tests to be approved. However, I added some extra features by myself to practice even further. I also added a serie of validations to prevent the calculator from being broken by illegal operations.
 
-![Calculator gif](./demonstration-gifs/calculadora.gif)
+![Calculator gif](./gifs-demonstracao/calculadora.gif)
 
 ## Task List
 The task list below was also developed as part of one of the tests to be approved. The objective was to practice basic CRUD operations with JS and Local Storage (no API/backend). I also took this opportunity to practice the use of bootstrap and Jquery.
 
-![Task List gif](./demonstration-gifs/lista-tarefas.gif)
+![Task List gif](./gifs-demonstracao/lista-tarefas.gif)
