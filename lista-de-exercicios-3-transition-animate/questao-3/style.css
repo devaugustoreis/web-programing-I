@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-height: 100vh;
+    overflow: hidden;
+    background-image: url(stars.jpg);
+}
+
+#base {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15vh;
+    height: 1vh;
+    background-color: gray;
+    z-index: 1;
+}
+
+#fumaca {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15vh;
+    height: 8vh;
+    border-radius: 50%;
+    background-color: rgb(219, 218, 218);
+    opacity: 0;
+    animation: aparecer 5s ease-in 0.7s;
+    animation-fill-mode: forwards;
+}
+
+#foguete {
+    position: absolute;
+    bottom: 1vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15vh;
+    height: 15vh;
+    animation: voar 5s ease-in 0.7s;
+    animation-fill-mode: forwards;
+}
+
+#fogo {
+    position: relative;
+    display: block;
+    margin: auto;
+    z-index: -1;
+    bottom: 2.5vh;
+    width: 2.5vh;
+    height: 3vh;
+    border: 2.5vh solid red;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    animation: soltar-fogo 1s ease-in-out 0.7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aparecer {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes voar {
+    0% { bottom: 1vh; }
+    80% { bottom: 100vh; }
+    100% { bottom: 100vh; }
+}
+
+@keyframes soltar-fogo {
+    0% { bottom: 2.5vh; }
+    100% { bottom: 0.5vh; }
+}

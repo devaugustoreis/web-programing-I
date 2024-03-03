@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./jquery-3.7.1.js"></script>
+</head>
+<body>
+
+    <h1 class="page-title d-flex justify-content-center align-items-center text-uppercase mb-0">Lista de Tarefas</h1>
+    <div class="main-content d-flex flex-column">
+        <button class="btn btn-lg btn-success w-100 mb-4" id="btn-new-task" data-bs-toggle="modal" data-bs-target="#modal-task">Criar Nova Tarefa</button>
+
+        <div class="d-flex justify-content-between flex-grow-1">
+            <div class="task-column flex-grow-1 rounded-4">
+                <h1 class="text-center rounded-top-4 p-2 to-do-title">A Fazer</h1>
+                <div id="to-do-list" class="overflow-y-auto">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert-wrapper position-fixed d-flex" id="alert-container"></div>
+
+    <!-- Create / Update Modal -->
+    <div class="modal fade" id="modal-task" data-bs-theme="dark" tabindex="-1" aria-labelledby="tasksModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center bg-success" id="modal-action-wrapper">
+                    <div class="modal-title text-white fs-5" id="modal-action">Criar Nova Tarefa</div>
+                </div>
+                <div class="modal-header">
+                    <input class="modal-title border-0 fs-5" id="modal-task-title" placeholder="Título da Tarefa"></input>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <textarea class="modal-body border-0" id="modal-task-content" placeholder="Conteúdo da Tarefa"></textarea>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-success" id="btn-save-task" data-bs-dismiss="modal">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div class="modal fade" id="modal-delete" data-bs-theme="dark" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center bg-danger">
+                    <div class="modal-title text-white fs-5">Excluir Tarefa</div>
+                </div>
+                <div class="modal-body text-light">
+                    Confirmar exclusão da Tarefa: 
+                    <strong id="modal-delete-task"></strong>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger" id="btn-delete-task" data-bs-dismiss="modal">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

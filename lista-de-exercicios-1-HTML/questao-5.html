@@ -1,0 +1,83 @@
+<!-- 5. Atividades sobres listas no HTML
+a) Crie o código para uma lista não numerada com dez elementos e explique os atributos que
+modificam a exibição da lista.
+b) Crie uma lista numerada contendo dez elementos e expliques os atributos e valores para estes.
+c) Crie um lista utilizando as tags <dl>, <dt>, e <dd>.
+d) Escreva um resumo explicando as diferentes tipos de listas do HTML com exemplos claros de seu
+uso. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5</title>
+</head>
+<body>
+    <!-- 5 - Letra A -->
+    A tag "ul" representa "unordered list" e é utilizada para criar uma lista em que a ordem dos elementos não tem relevância.
+    Dentro da tag "ul", precisamos usar a tag "li" (list item) para criar cada um dos itens da lista. <br> <br>
+
+    Podemos estilizar a lista abaixo utilizando CSS. Por padrão, uma lista não ordenada utiliza o "disc" para cada item.
+    Contudo, podemos usar a propriedade "list-style-type" (CSS), para substituir esses "disc" por outros elementos.
+
+    <ul style="list-style-type: square;">
+        <li>1º Elemento</li>
+        <li>2º Elemento</li>
+        <li>3º Elemento</li>
+        <li>4º Elemento</li>
+        <li>5º Elemento</li>
+        <li>6º Elemento</li>
+        <li>7º Elemento</li>
+        <li>8º Elemento</li>
+        <li>9º Elemento</li>
+        <li>10º Elemento</li>
+    </ul>
+    <hr>
+
+    <!-- 5 - Letra B -->
+    A tag "ol" representa "ordered list" e é utilizada para criar uma lista em que a ordem dos elementos tem relevância.
+    Dentro da tag "ol", precisamos usar a tag "li" (list item) para criar cada um dos itens da lista. <br> <br>
+
+    Por padrão, uma lista ordenada é ordenada numericamente, mas existem alguns atributos que podem ser utilizados para mudar o comportamento e ordenação da lista. <br> <br>
+
+    type -> Define o tipo da lista (numérica, letras, números romanos). Os seguintes valores são aceitos: 1, A, a, I, i. <br>
+    start -> Define em qual elemento a lista começará. Sempre deve-se passar um valor numérico, mesmo que a lista não seja numérica. <br>
+    reversed -> Define que a lista deve começar de trás para frente. <br>
+
+    <ol>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+    </ol>
+    <hr>
+
+    <!-- 5 - Letra C -->
+    <dl>
+        <dt>Nome do Elemento 1</dt>
+        <dd>Descrição do elemento 1</dd>
+        <dt>Nome do Elemento 2</dt>
+        <dd>Descrição do elemento 2</dd>
+        <dt>Nome do Elemento 3</dt>
+        <dd>Descrição do elemento 3</dd>
+        <dt>Nome do Elemento 4</dt>
+        <dd>Descrição do elemento 4</dd>
+        <dt>Nome do Elemento 5</dt>
+        <dd>Descrição do elemento 5</dd>
+    </dl>
+    <hr>
+
+    <!-- 5 - Letra D -->
+    Os três tipos de listas acima tem utilizações diferentes. As tags "ul" e "ol" funcionam de modo semelhante, mas a escolha por uma ou outra está atrelada ao fato
+    da ordem dos itens da lista ser relevante ou não. A tag "dl" (e consequentemente as tags "dt" e "dd"), embora não ofereça (por padrão) nenhum elemento visual 
+    para identificar cada item da lista, possui algumas vantagens: além da flexibilidade de aceitar imagens, links e outros, ainda possui um elemento específico
+    (importância semântica) para a descrição dos itens da lista.
+</body>
+</html>

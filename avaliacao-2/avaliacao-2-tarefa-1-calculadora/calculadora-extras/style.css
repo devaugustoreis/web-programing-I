@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.calculator-wrapper, .calculator-side {
+    width: 350px;
+    height: 530px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calculator-side {
+    z-index: -1;
+    transform: translate(calc(-50% + 6px), calc(-50% + 6px));
+    background-color: #8cb8d1;
+    border: 2px solid #2a84b5;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px #8ea9b9b5;
+}
+
+select {
+    background-color: #136793;
+    color: #d1eeff;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+#calculator-select {
+    width: 100%;
+    height: 7%;
+    font-size: 16px;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.calculator {
+    width: 100%;
+    height: 93%;
+    background-color: #d1eeff;
+    padding: 25px;
+    border-color: #2a84b5;
+    border-style: solid;
+    border-width: 0px 2px 2px 2px;
+    border-radius: 0px 0px 6px 6px;
+}
+
+.screen {
+    width: 100%;
+    height: 15%;
+    margin-bottom: 7%;
+    text-align: right;
+    border: 1px solid #2a84b5;
+    background-color: #fbfeff;
+    color: #136793;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.buttons {
+    height: 78%;
+    display: grid;
+    grid-template-areas: "plus    minus   multiply  divide"
+                         "seven   eight     nine     equal"
+                         "four    five      six      equal"
+                         "one      two     three     equal"
+                         "zero     dot     reset     equal";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+/* Defining grid-areas */
+.btn-plus { grid-area: plus; }
+.btn-subtract { grid-area: minus; }
+.btn-multiply { grid-area: multiply; }
+.btn-divide { grid-area: divide; }
+.btn-7 { grid-area: seven; }
+.btn-8 { grid-area: eight; }
+.btn-9 { grid-area: nine; }
+.btn-4 { grid-area: four; }
+.btn-5 { grid-area: five; }
+.btn-6 { grid-area: six; }
+.btn-1 { grid-area: one; }
+.btn-2 { grid-area: two; }
+.btn-3 { grid-area: three; }
+.btn-0 { grid-area: zero; }
+.btn-dot { grid-area: dot; }
+.btn-reset { grid-area: reset; }
+.btn-equal { grid-area: equal; }
+
+.btn {
+    border: 1px solid #2a84b5;
+    background-color: #99c0e0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #4c758d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-plus, .btn-subtract, .btn-multiply, .btn-divide { background-color: #72afe0; } 
+.btn-equal { background-color: #6999c1;  }
+
+/* Buttons Hover */
+.btn:hover { background-color: #83b5df; }
+.btn-plus:hover, .btn-subtract:hover, .btn-multiply:hover, .btn-divide:hover { background-color: #5c9fd6; }
+.btn-equal:hover { background-color: #5d93c0; }
+
+/* Buttons Icons */
+.btn > img {
+    width: 15px;
+    filter: invert(99%) sepia(0%) saturate(6926%) hue-rotate(267deg) brightness(130%) contrast(100%); /* Change color to white */
+}
+
+.btn-clicked {
+    transform: translate(1px, 2px);
+    box-shadow: none;
+}
+
+/* OPERATIONS HISTORIC */
+#operations-historic {
+    width: fit-content;
+    color: #136793;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 12px;
+    border: 1px solid #136793;
+}
+
+.historic-title {
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 8px;
+}
+
+/* CONVERSION CALCULATOR */
+#conversion-calculator {
+    display: none;
+}
+
+#conversion-calculator .buttons {
+    height: 70%;
+    grid-template-areas: "seven   eight     nine"
+                         "four    five      six "
+                         "one      two     three"
+                         "zero     dot     reset";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.input-field, .output-field {
+    display: inline-block;
+    width: 40%;
+    height: 20%;
+    margin-bottom: 10%;
+}
+
+.output-field {
+    float: right;
+}
+
+#conversion-calculator .screen {
+    height: 65%;
+}
+
+#input-selector, #output-selector {
+    width: 100%;
+    height: 28%;
+    border-radius: 6px;
+}

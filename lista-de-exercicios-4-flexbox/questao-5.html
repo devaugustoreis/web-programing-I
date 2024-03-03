@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5</title>
+    <link rel="stylesheet" href="questao-5.css">
+</head>
+<body>
+    <!-- PROPRIEDADES FLEX CONTAINER -->
+    <h1>Propriedades do Container Flex (Pai)</h1>
+    <section>
+        <details>
+            <summary>container flex</summary>
+            <p>display: flex</p>
+            <p>flex-direction: row</p>
+            <p>flex-direction: row-reverse</p>
+            <p>flex-direction: column</p>
+            <p>flex-direction: column-reverse</p>
+            <p>flex-wrap: nowrap</p>
+            <p>flex-wrap: wrap</p>
+            <p>flex-wrap: wrap-reverse</p>
+            <p>flex-flow: row nowrap</p>
+            <p>flex-flow: row wrap</p>
+            <p>flex-flow: row wrap-reverse</p>
+            <p>flex-flow: column nowrap</p>
+            <p>flex-flow: column wrap</p>
+            <p>flex-flow: column wrap-reverse</p>
+            <p>justify-content: flex-start</p>
+            <p>justify-content: flex-end</p>
+            <p>justify-content: center</p>
+            <p>justify-content: space-between</p>
+            <p>justify-content: space-around</p>
+            <p>justify-content: space-evenly</p>
+            <p>align-items: stretch</p>
+            <p>align-items: flex-start</p>
+            <p>align-items: flex-end</p>
+            <p>align-items: center</p>
+            <p>align-items: baseline</p>
+            <p>align-content: stretch</p>
+            <p>align-content: flex-start</p>
+            <p>align-content: flex-end</p>
+            <p>align-content: center</p>
+            <p>align-content: space-between</p>
+            <p>align-content: space-around</p>
+            <p>align-content: space-evenly</p>
+        </details>
+        <div class="section-containers">
+            <div>
+                <p class="subtitle">display BLOCK</p>
+                <div class="container">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">display FLEX</p>
+                <div class="container flex">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="flex-direction-section">
+        <details>
+            <summary>flex-direction</summary>
+            <p>flex-direction: row</p>
+            <p>flex-direction: row-reverse</p>
+            <p>flex-direction: column</p>
+            <p>flex-direction: column-reverse</p>
+        </details>
+        <div class="section-containers">
+            <div>
+                <p class="subtitle">row</p>
+                <div class="container flex flex-direction-row">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">row-reverse</p>
+                <div class="container flex flex-direction-row-reverse">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">column</p>
+                <div class="container flex flex-direction-column">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">column-reverse</p>
+                <div class="container flex flex-direction-column-reverse">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="flex-wrap-section">
+        <details>
+            <summary>flex-wrap</summary>
+            <p>flex-wrap: nowrap</p>
+            <p>flex-wrap: wrap</p>
+            <p>flex-wrap: wrap-reverse</p>
+        </details>
+        <div class="section-containers">
+            <div>
+                <p class="subtitle">nowrap</p>
+                <div class="container flex flex-nowrap">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">wrap</p>
+                <div class="container flex flex-wrap">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">wrap-reverse</p>
+                <div class="container flex flex-wrap-reverse">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="flex-flow-section">
+        <details>
+            <summary>flex-flow</summary>
+            <p>flex-flow: row nowrap</p>
+            <p>flex-flow: row wrap</p>
+            <p>flex-flow: column nowrap</p>
+            <p>flex-flow: column wrap</p>
+        </details>
+        <p class="subtitle"><i>flex-flow</i> é apenas uma propriedade sintética que une as propriedades <i>flex-direction</i> e <i>flex-wrap</i>.</p>
+    </section>
+    
+    <section id="justify-content-section">
+        <details>
+            <summary>justify-content</summary>
+            <p>justify-content: flex-start</p>
+            <p>justify-content: flex-end</p>
+            <p>justify-content: center</p>
+            <p>justify-content: space-between</p>
+            <p>justify-content: space-around</p>
+            <p>justify-content: space-evenly</p>
+        </details>
+        <div class="section-containers">
+            <div>
+                <p class="subtitle">flex-start</p>
+                <div class="container flex justify-content-flex-start">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">flex-end</p>
+                <div class="container flex justify-content-flex-end">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">center</p>
+                <div class="container flex justify-content-center">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">space-between</p>
+                <div class="container flex justify-content-space-between">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">space-around</p>
+                <div class="container flex justify-content-space-around">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">space-evenly</p>
+                <div class="container flex justify-content-space-evenly">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="align-items-section">
+        <details>
+            <summary>align-items</summary>
+            <p>align-items: stretch</p>
+            <p>align-items: flex-start</p>
+            <p>align-items: flex-end</p>
+            <p>align-items: center</p>
+            <p>align-items: baseline</p>
+        </details>
+        <div class="section-containers">
+            <div>
+                <p class="subtitle">stretch</p>
+                <div class="container flex align-items-stretch">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">flex-start</p>
+                <div class="container flex align-items-flex-start">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">flex-end</p>
+                <div class="container flex align-items-flex-end">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">center</p>
+                <div class="container flex align-items-center">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">baseline</p>
+                <div class="container flex align-items-baseline">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="align-content-section">
+        <details>
+            <summary>align-content</summary>
+            <p>align-content: stretch</p>
+            <p>align-content: flex-start</p>
+            <p>align-content: flex-end</p>
+            <p>align-content: center</p>
+            <p>align-content: space-between</p>
+            <p>align-content: space-around</p>
+            <p>align-content: space-evenly</p>
+            <p>gap</p>
+            <p>row-gap</p>
+            <p>column-gap</p>
+        </details>
+        <div class="section-containers">
+            <div>
+                <p class="subtitle">flex-start</p>
+                <div class="container flex align-content-flex-start">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">flex-end</p>
+                <div class="container flex align-content-flex-end">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">center</p>
+                <div class="container flex align-content-center">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">space-between</p>
+                <div class="container flex align-content-space-between">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">space-around</p>
+                <div class="container flex align-content-space-around">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">space-evenly</p>
+                <div class="container flex align-content-space-evenly">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">stretch (no gap)</p>
+                <div class="container flex align-content-stretch">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">stretch (gap: 15px)</p>
+                <div class="container flex align-content-stretch gap-15">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">stretch (gap: 5px 20px)</p>
+                <div class="container flex align-content-stretch gap-5-20">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">stretch (row-gap: 15px)</p>
+                <div class="container flex align-content-stretch row-gap-15">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">stretch (column-gap: 15px)</p>
+                <div class="container flex align-content-stretch column-gap-15">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+        </div>
+        <p class="subtitle">As demonstrações de gap/row-gap/column-gap foram realizadas com align-content: stretch, mas a propriedade é aplicável a todos os outros tipos de alinhamento.</p>
+    </section>
+
+    <!-- PROPRIEDADES FLEX ITEMS -->
+    <h1>Propriedades dos Items Flex (Filhos)</h1>
+    <section id="order-section">
+        <details>
+            <summary>order</summary>
+            <ul>
+                <li>Esta propriedade controla a ordem em que cada item flex aparece em um container flex.</li>
+                <li>Caso não informado, o padrão para um item flex é <i>order: 0.</i></li>
+                <li>Items com valores menores aparecerão primeiro.</li> 
+                <li>Items com o mesmo valor aparecem na mesma ordem definida no código HTML.</li>
+                <li>Valores negativos podem ser atribuídos para esta propriedade.</li>
+            </ul>
+        </details>
+        <div class="section-containers">
+            <div>
+                <p class="subtitle">natural order</p>
+                <div class="container flex">
+                    <div class="box box-1">1<br>(0)</div>
+                    <div class="box box-2">2<br>(0)</div>
+                    <div class="box box-3">3<br>(0)</div>
+                    <div class="box box-4">4<br>(0)</div>
+                    <div class="box box-5">5<br>(0)</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">order (value)</p>
+                <div class="container flex order">
+                    <div class="box box-1">1<br>(0)</div>
+                    <div class="box box-2">2<br>(2)</div>
+                    <div class="box box-3">3<br>(1)</div>
+                    <div class="box box-4">4<br>(-1)</div>
+                    <div class="box box-5">5<br>(0)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="flex-grow-section">
+        <details>
+            <summary>flex-grow</summary>
+            <ul>
+                <li>Esta propriedade define a quantidade do espaço remanescente no container flex que cada item flex receberá.</li>
+                <li>O valor padrão é <i>flex-grow: 0</i> e define que os items ocuparão seu espaço natural.</li>
+                <li>Caso algum elemento tenha <i>flex-grow: 1</i> (ou mais), este elemento ocupará todo o espaço remanescente no container flex.</li>
+                <li>Caso vários elementos tenham <i>flex-grow: 1</i> (ou mais), eles dividirão o espaço remanescente na proporção informada.</li>
+                <li>Exemplo: Um elemento com <i>flex-grow: 2</i> receberá o dobro do espaço remanescente em relação a um elemento com <i>flex-grow: 1</i>.</li>
+                <li>Esta propriedade não aceita valores negativos.</li>
+            </ul>
+        </details>
+        <div class="section-containers">
+            <div>
+                <p class="subtitle">flex-grow: 0</p>
+                <div class="container flex">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">flex-grow: 1</p>
+                <div class="container flex flex-grow">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">flex-grow: (value)</p>
+                <div class="container flex flex-grow grow-5">
+                    <div class="box box-1">1<br>(5)</div>
+                    <div class="box box-2">2<br>(1)</div>
+                    <div class="box box-3">3<br>(1)</div>
+                    <div class="box box-4">4<br>(1)</div>
+                    <div class="box box-5">5<br>(1)</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">flex-grow: 5 (hover)</p>
+                <div class="container flex flex-grow grow-5-hover">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="flex-shrink-section">
+        <details>
+            <summary>flex-shrink</summary>
+            <ul>
+                <li>Esta propriedade define a capacidade que cada item flex tem de encolher-se, caso necessário, para caber dentro de um container flex.</li>
+                <li>O valor padrão é <i>flex-shrink: 1</i> e define que o item flex pode se encolher além de sua dimensão natural para caber dentro do container flex.</li>
+                <li>O limite de encolhimento de um item flex é seu conteúdo interno.</li>
+                <li><i>flex-shrink: 0</i> define que o item flex não se encolherá, podendo extravasar os limites do container flex.</li>
+                <li>A quantidade que cada item flex encolhe é determinada pela proporção distribuída entre eles.</li>
+                <li>Esta propriedade não aceita valores negativos.</li>
+            </ul>
+        </details>
+        <p class="explanation">Cada item abaixo possui uma largura <i>(width)</i> de 30% em relação ao container flex.</p>
+        <div class="section-containers">
+            <div>
+                <p class="subtitle">flex-shrink: 1</p>
+                <div class="container flex">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">flex-shrink: 0</p>
+                <div class="container flex flex-shrink-0">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">flex-shrink (value)</p>
+                <div class="container flex flex-shrink">
+                    <div class="box box-1">1<br>(1)</div>
+                    <div class="box box-2">2<br>(1)</div>
+                    <div class="box box-3">3<br>(5)</div>
+                    <div class="box box-4">4<br>(1)</div>
+                    <div class="box box-5">5<br>(2)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="flex-basis-section">
+        <details>
+            <summary>flex-basis</summary>
+            <ul>
+                <li>Esta propriedade define um tamanho padrão para um item flex antes que o espaço remanescente seja distribuído entre os items flex.</li>
+                <li>Aceita valores <i>(px, rem, %, vw/vh)</i> e palavras-chave: <i>auto, content, min-content, max-content, fit-content.</i></li>
+                <li>O valor padrão é <i>flex-basis: auto</i> e considerará a altura e largura determinados para o elemento.</li>
+                <li><i>Flex-basis</i> leva em consideração a direção do container flex. Para <i>flex-direction: row</i>, <i>flex-basis</i> se comportará de modo semelhante a propriedade <i>width</i>. Para <i>flex-direction: column</i>, <i></i>flex-basis se comportará de modo semelhante a propriedade <i>height.</i></li>
+            </ul>
+        </details>
+        <div class="section-containers">
+            <div>
+                <p class="subtitle">flex-basis</p>
+                <div class="container flex">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">item-2 flex-basis: 100px</p>
+                <div class="container flex flex-basis-row">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">item-2 flex-basis: 50px</p>
+                <div class="container flex flex-basis-column">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="flex-section">
+        <details>
+            <summary>flex</summary>
+            <ul>
+                <li><i>flex: (flex-grow) (flex-shrink) (flex-basis);</i></li>
+                <li>O valor padrao para esta propriedade é <i>flex: 0 1 auto;</i></li>
+                <li>O segundo e o terceiro parâmetros são opcionais.</li>
+                <li>Se a propridade <i>flex</i> for usada, mas um terceiro parâmetro não for passado, então <i>flex-basis</i> assumirá <i>0%</i> no lugar de <i>auto.</i></li>
+                <li>É recomendado utilizar esta propriedade sintética em vez das propridades individuais (grow, shrink e basis).</li>
+            </ul>
+        </details>
+        <p class="subtitle"><i>flex</i> é apenas uma propriedade sintética que une as propriedades <i>flex-grow</i>, <i>flex-srhink</i> e <i>flex-basis.</i></p>
+    </section>
+
+    <section id="align-self-section">
+        <details>
+            <summary>align-self</summary>
+            <p>align-self: auto</p>
+            <p>align-self: flex-start</p>
+            <p>align-self: flex-end</p>
+            <p>align-self: center</p>
+            <p>align-self: baseline</p>
+            <p>align-self: stretch</p>
+        </details>
+        <div class="section-containers">
+            <div>
+                <p class="subtitle">align-items: stretch</p>
+                <p class="subtitle">align-self: flex-start</p>
+                <div class="container flex align-items-stretch">
+                    <div class="box box-1 align-self-flex-start">flex-start</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">align-items: flex-start</p>
+                <p class="subtitle">align-self: flex-end</p>
+                <div class="container flex align-items-flex-start">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2 align-self-flex-end">flex-end</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">align-items: flex-end</p>
+                <p class="subtitle">align-self: center</p>
+                <div class="container flex align-items-flex-end">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3 align-self-center">center</div>
+                    <div class="box box-4">4</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">align-items: center</p>
+                <p class="subtitle">align-self: stretch</p>
+                <div class="container flex align-items-center">
+                    <div class="box box-1">1</div>
+                    <div class="box box-2">2</div>
+                    <div class="box box-3">3</div>
+                    <div class="box box-4 align-self-stretch">stretch</div>
+                    <div class="box box-5">5</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+#conteiner {
+    width: 50vh;
+    height: 50vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box {
+    float: left;
+    width: 50%;
+    height: 50%;
+    animation: rotacionar 5s infinite linear;
+}
+
+#box-1 {
+    background-color: aquamarine;
+}
+
+#box-2 {
+    background-color: brown;
+}
+
+#box-3 {
+    background-color: cornflowerblue;
+}
+
+#box-4 {
+    background-color: tomato;
+}
+
+@keyframes rotacionar {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

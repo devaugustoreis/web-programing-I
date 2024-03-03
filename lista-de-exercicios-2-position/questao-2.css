@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 13vh;
+    height: 13vh;
+    position: fixed;
+    text-align: center;
+    padding: 2vh;
+}
+
+#box1 {
+    background-color: red;
+}
+
+#box2 {
+    background-color: green;
+    bottom: 0;
+}
+
+#box3 {
+    background-color: gray;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#box4 {
+    background-color: purple;
+    right: 0;
+}
+
+#box5 {
+    background-color: yellow;
+    bottom: 0;
+    right: 0;
+}

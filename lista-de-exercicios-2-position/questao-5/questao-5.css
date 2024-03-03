@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+body {
+    height: 100vh; 
+}
+
+.section {
+    height: 100%;
+}
+
+#section-1 {
+    background-color: rgb(213, 232, 255);
+}
+
+#section-2 {
+    background-color: rgb(255, 248, 230);
+}
+
+/* ============== MENSAGENS ============== */
+.chat_content {
+    position: fixed;
+    bottom: 0;
+    right: 5vw;
+    height: 58vh;
+    width: 25vw;
+    min-width: 360px;
+    padding: 1.5vh;
+    background-color: #fff;
+    overflow-Y: scroll;
+}
+
+.mensagem {
+    margin-bottom: 1rem;
+}
+
+.chat_content, .mensagem, #formulario_chat {
+    border-radius: 6px;
+    border: 2px solid #d4d4d5;
+}
+
+.avatar {
+    height: 2.5rem;
+    width: 2.5rem;
+    float: left;
+    margin: 0.7rem 0.8rem;
+}
+
+.escrito_por {
+    position: relative;
+    bottom: 0.9rem;
+    right: 3.2rem;
+}
+
+.escrito_por, .mensagem__hora > p {
+    color: #b6b7b6;
+    font-size: 0.8rem;
+}
+
+.mensagem__texto {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.mensagem__hora {
+    text-align: right;
+    padding-right: 1rem;
+    padding-bottom: 0.7rem;
+}
+
+/* ----------- Mensagens do Usuário ----------- */
+.mensagem_minha {
+    background-color: #dbfad0;
+}
+
+.mensagem_minha > .avatar {
+    float: right;
+    border-radius: 50%;
+}
+
+.mensagem_minha > .escrito_por {
+    right: -0.9rem;
+}
+
+.mensagem_minha > .mensagem__texto {
+    text-align: right;
+}
+
+/* ============== FORMULÁRIO ============== */
+#formulario_chat {
+    padding: 0.7rem;
+    text-align: right;
+}
+
+textarea {
+    width: 100%;
+    outline: none;
+    border: 2px solid #d4d4d5;
+    font-size: 1.2rem;
+    min-height: 4rem;
+}
+
+#formulario_chat button {
+    padding: 0.1rem 0.3rem;
+    margin-right: 0.5rem;
+}

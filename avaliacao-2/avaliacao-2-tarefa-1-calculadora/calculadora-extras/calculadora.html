@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação 2, Exercício 1 - Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="calculator-wrapper">
+        <select id="calculator-select">
+            <option value="standard">Padrão</option>
+            <option value="temperature">Temperatura</option>
+            <option value="length">Comprimento</option>
+            <option value="time">Tempo</option>
+            <option value="angle">Ângulo</option>
+        </select>
+        
+        <!-- STANDARD MODE -->
+        <div class="calculator" id="standard-calculator">
+            <input type="text" class="screen" id="std-input" disabled>
+            <div class="buttons">
+                <button value="+" class="btn btn-plus"><img src="./icons/plus.svg" alt="somar"></button>
+                <button value="-" class="btn btn-subtract"><img src="./icons/minus.svg" alt="subtrair"></button>
+                <button value="*" class="btn btn-multiply"><img src="./icons/multiply.svg" alt="multiplicar"></button>
+                <button value="/" class="btn btn-divide"><img src="./icons/divide.svg" alt="dividir"></button>
+                <button value="7" class="btn btn-7">7</button>
+                <button value="8" class="btn btn-8">8</button>
+                <button value="9" class="btn btn-9">9</button>
+                <button value="4" class="btn btn-4">4</button>
+                <button value="5" class="btn btn-5">5</button>
+                <button value="6" class="btn btn-6">6</button>
+                <button value="1" class="btn btn-1">1</button>
+                <button value="2" class="btn btn-2">2</button>
+                <button value="3" class="btn btn-3">3</button>
+                <button value="0" class="btn btn-0">0</button>
+                <button value="." class="btn btn-dot">.</button>
+                <button class="btn btn-reset">C</button>
+                <button class="btn btn-equal"><img src="./icons/equals.svg" alt="calcular"></button>
+            </div>
+        </div>
+
+        <!-- CONVERSION MODE -->
+        <div class="calculator" id="conversion-calculator">
+            <div class="input-field">
+                <input type="text" class="screen" id="conv-input" disabled>
+                <select id="input-selector">
+                </select>
+            </div>
+            <div class="output-field">
+                <input type="text" class="screen" id="conv-output" disabled>
+                <select id="output-selector">
+                </select>
+            </div>
+            <div class="buttons">
+                <button value="7" class="btn btn-7">7</button>
+                <button value="8" class="btn btn-8">8</button>
+                <button value="9" class="btn btn-9">9</button>
+                <button value="4" class="btn btn-4">4</button>
+                <button value="5" class="btn btn-5">5</button>
+                <button value="6" class="btn btn-6">6</button>
+                <button value="1" class="btn btn-1">1</button>
+                <button value="2" class="btn btn-2">2</button>
+                <button value="3" class="btn btn-3">3</button>
+                <button value="0" class="btn btn-0">0</button>
+                <button value="." class="btn btn-dot">.</button>
+                <button class="btn btn-reset">C</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="calculator-side"></div>
+
+    <div id="operations-historic">
+        <h1 class="historic-title">Histórico de Operações</h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

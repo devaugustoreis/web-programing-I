@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 21</title>
+    <style>
+        .subtitle {
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #box-1 {
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        .blue {
+            color: rgb(28, 106, 207);
+        }
+
+        .red {
+            color: rgb(192, 48, 48);
+        }
+    </style>
+</head>
+<body>
+    <div class="subtitle">
+        <p><span class="blue">X = 0px</span> / <span class="red">Y = 0px</span></p>
+        <p><span class="blue">X = 500px</span> / <span class="red">Y = 0px</span></p>
+    </div>
+    <div id="box-1"></div>
+    <div class="subtitle">
+        <p><span class="blue">X = 0px</span> / <span class="red">Y = 500px</span></p>
+        <p><span class="blue">X = 500px</span> / <span class="red">Y = 500px</span></p>
+    </div>
+
+    <p>Coordenadas: <span id="coords-value"> </span></p>
+
+    <script src="Ex21.js"></script>
+</body>
+</html>

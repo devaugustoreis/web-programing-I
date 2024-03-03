@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+#conteiner {
+    width: 50vh;
+    height: 50vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box {
+    float: left;
+    width: 50%;
+    height: 50%;
+    transition: background-color 5s;
+}
+
+#box-1 {
+    background-color: aquamarine;
+}
+
+#box-2 {
+    background-color: brown;
+}
+
+#box-3 {
+    background-color: cornflowerblue;
+}
+
+#box-4 {
+    background-color: tomato;
+}
+
+#box-1:hover {
+    background-color: yellow;
+}
+
+#box-2:hover {
+    background-color: teal;
+}
+
+#box-3:hover {
+    background-color: crimson;
+}
+
+#box-4:hover {
+    background-color: seagreen;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 22</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        .giant-letter {
+            --letter-color: aqua;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 6px;
+            transition: 0.4s;
+            z-index: 1;
+            color: var(--letter-color);
+        }
+
+        .grow-letter {
+            font-size: 250px;
+        }
+
+        .rotate-letter {
+            animation: rotation 4s linear infinite, glow 0.6s ease-in-out infinite alternate;
+        }
+
+        @keyframes rotation {
+            0% { transform: translate(-50%, -50%) rotate3d(0, 0, 0, 0deg); }
+            100% { transform: translate(-50%, -50%) rotate3d(0, 1, 0, 360deg); }
+        }
+
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px var(--letter-color); }
+            100% { text-shadow: 0 0 15px var(--letter-color); }
+        }
+    </style>
+</head>
+<body>
+    <div id="last-inputs">Teclas Digitadas: </div>
+    <div class="giant-letter" id="giant-letter"></div>
+
+    <script src="Ex22.js"></script>
+</body>
+</html>

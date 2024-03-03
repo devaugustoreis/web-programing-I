@@ -1,0 +1,282 @@
+<!-- 6. Crie uma tabela conforme instruções.
+a) Crie uma tabela Criar uma Tabela Básica: Utilize as tags <table>, <tr>, <th>, e <td>
+para criar uma tabela simples, contendo os estados brasileiros, população, região e
+capital.
+b) Adicione um link no nome de cada estado para página da wikipedia ou governo de
+cada estado.
+c) Adicione uma linha de sumarização na sua tabela, contabilizando população
+d) Adicione tags de agrupamento thead, tbody, tfoot e utilize regras css para colorir
+estes itens.
+e) Faça o uso de colpan na sua tabela.
+f) Adicione regras css para definir cor de bordas a sua tabela.  -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+    <style>
+        table {
+            border: 2px solid #3B5F7A;
+            color: #203c52;
+        }
+
+        table, th, td {
+            padding: 5px 10px;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        thead {
+            background-color: #386487;
+            color: #edf6fd;
+        }
+
+        tbody tr:nth-child(odd), 
+        #north,
+        #center-west, 
+        #south {
+            background-color: #aad3f3;
+        }
+
+        tbody tr:nth-child(odd):hover, 
+        #north:hover, 
+        #center-west:hover, 
+        #south:hover {
+            background-color: #86aece;
+        }
+
+        tbody tr:nth-child(even),
+        #northeast,
+        #southeast {
+            background-color: #d4ebfd;
+        }
+
+        tbody tr:nth-child(even):hover,
+        #northeast:hover,
+        #southeast:hover {
+            background-color: #98c0df;
+        }
+
+        .region td:first-child {
+            width: 140px;
+            text-align: center;
+        }
+
+        tr td:nth-last-child(3) {
+            padding-right: 30px;
+        }
+
+        a {
+            color: inherit;
+        }
+        
+        a:hover {
+            color: #02111d;
+        }
+
+        .population {
+            text-align: right;
+            width: 110px;
+        }
+
+        tfoot tr td {
+            border-top: 1px solid #3B5F7A;
+            background-color: #5F9AC7;
+            font-weight: bold;
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+
+    <table>
+        <!-- TABLE HEADER -->
+        <thead>
+            <tr>
+                <th>Região</th>
+                <th>Estado</th>
+                <th>Capital</th>
+                <th>População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- REGIÃO NORTE -->
+            <tr class="region">
+                <td rowspan="7" id="north">Norte</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Acre" target="_blank">Acre</a></td>
+                <td>Rio Branco</td>
+                <td class="population">924 000</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Amazonas" target="_blank">Amazonas</a></td>
+                <td>Manaus</td>
+                <td class="population">4 269 995</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Amapá" target="_blank">Amapá</a></td>
+                <td>Macapá</td>
+                <td class="population">877 613</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Tocantins" target="_blank">Tocantins</a></td>
+                <td>Palmas</td>
+                <td class="population">1 607 363</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Pará" target="_blank">Pará</a></td>
+                <td>Belém</td>
+                <td class="population">8 777 124</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Roraima" target="_blank">Roraima</a></td>
+                <td>Boa Vista</td>
+                <td class="population">652 713</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Rondônia" target="_blank">Rondônia</a></td>
+                <td>Porto Velho</td>
+                <td class="population">1 787 279</td>
+            </tr>
+
+            <!-- REGIÃO NORDESTE -->
+            <tr class="region">
+                <td rowspan="9" id="northeast">Nordeste</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Ceará" target="_blank">Ceará</a></td>
+                <td>Fortaleza</td>
+                <td class="population">9 240 580</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Alagoas" target="_blank">Alagoas</a></td>
+                <td>Maceió</td>
+                <td class="population">3 127 511</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Bahia" target="_blank">Bahia</a></td>
+                <td>Salvador</td>
+                <td class="population">14 985 284</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Maranhão" target="_blank">Maranhão</a></td>
+                <td>São Luís</td>
+                <td class="population">6 775 152</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Paraíba" target="_blank">Paraíba</a></td>
+                <td>João Pessoa</td>
+                <td class="population">3 974 495</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Pernambuco" target="_blank">Pernambuco</a></td>
+                <td>Recife</td>
+                <td class="population">9 058 155</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Piauí" target="_blank">Piauí</a></td>
+                <td>Teresina</td>
+                <td class="population">3 289 290</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Norte" target="_blank">Rio Grande do Norte</a></td>
+                <td>Natal</td>
+                <td class="population">3 302 406</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Sergipe" target="_blank">Sergipe</a></td>
+                <td>Aracaju</td>
+                <td class="population">2 361 657</td>
+            </tr>
+
+            <!-- REGIÃO CENTRO-OESTE -->
+            <tr class="region">
+                <td rowspan="3" id="center-west">Centro-Oeste</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Goiás" target="_blank">Goiás</a></td>
+                <td>Goiânia</td>
+                <td class="population">7 206 589</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Mato_Grosso" target="_blank">Mato Grosso</a></td>
+                <td>Cuiabá</td>
+                <td class="population">3 658 813</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Mato_Grosso_do_Sul" target="_blank">Mato Grosso do Sul</a></td>
+                <td>Campo Grande</td>
+                <td class="population">2 839 188</td>
+            </tr>
+
+            <!-- REGIÃO SUDESTE -->
+            <tr class="region">
+                <td rowspan="4" id="southeast">Sudeste</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Espírito_Santo_(estado)" target="_blank">Espírito Santo</a></td>
+                <td>Vitória</td>
+                <td class="population">4 108 508</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Minas_Gerais" target="_blank">Minas Gerais</a></td>
+                <td>Belo Horizonte</td>
+                <td class="population">20 538 718</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro_(estado)" target="_blank">Rio de Janeiro</a></td>
+                <td>Rio de Janeiro</td>
+                <td class="population">16 054 524</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/São_Paulo_(estado)" target="_blank">São Paulo</a></td>
+                <td>São Paulo</td>
+                <td class="population">44 420 459</td>
+            </tr>
+
+            <!-- REGIÃO SUL -->
+            <tr class="region">
+                <td rowspan="3" id="south">Sul</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Paraná" target="_blank">Paraná</a></td>
+                <td>Curitiba</td>
+                <td class="population">11 597 484</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Santa_Catarina" target="_blank">Santa Catarina</a></td>
+                <td>Florianópolis</td>
+                <td class="population">7 762 154</td>
+            </tr>
+            <tr>
+                <td><a href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul" target="_blank">Rio Grande do Sul</a></td>
+                <td>Porto Alegre</td>
+                <td class="population">10 880 506</td>
+            </tr>
+        </tbody>
+
+        <!-- TABLE FOOTER -->
+        <tfoot>
+            <tr>
+                <td colspan="3">TOTAL</td>
+                <td id="total-population"></td>
+            </tr>
+        </tfoot>       
+    </table>
+
+    <script>
+        let allPopulations = document.querySelectorAll(".population")
+        let totalPopulation = 0
+        
+        allPopulations.forEach(population => {
+            totalPopulation += parseFloat(population.innerText.replace(/\s/g, ""))
+        })
+
+        totalPopulation = totalPopulation.toString().replace(/\d{3}/g, "$& ")
+        // Explicação da expressão regular acima:
+        // \d é utilizado para encontrar quaisquer digitos numéricos. Em combinação com o {3}, ele procura uma combinação de 3 dígitos consecutivos.
+        // O "g" (global) ao final é para que o método "replace" não faça a substituição apenas na primeira ocorrência, mas em todas as encontradas.
+        // O segundo parâmetro é pelo que iremos substituir. O uso do "$&" mantém a mesma string informada como primeiro parâmetro, e então adicionamos
+        // um espaço extra para cada substituição realizada. (Ou seja, nesse caso, um espaço para cada 3 digítos numéricos).
+
+        let totalPopulationCell = document.getElementById("total-population")
+        totalPopulationCell.innerText = totalPopulation
+    </script>
+</body>
+</html>

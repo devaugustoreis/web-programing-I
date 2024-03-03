@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylechat.css">
+    <link rel="stylesheet" href="page.css">
+</head>
+
+<body>
+    <header>
+        <div class="header__content">
+            <div class="header__logo">
+                <img src="./logo.png" alt="Logo">
+            </div>
+            <div class="header__menu">
+                <div class="header__menu__item">
+                    <a href="#">Home</a>
+                </div>
+                <div class="header__menu__item">
+                    <a href="#">Sobre</a>
+                </div>
+                <div class="header__menu__item">
+                    <a href="#">Contato</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--Artigos -->
+        <article class="noticia">
+            <img src="./post.jpg" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, soluta.</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolorum.
+        </article>
+        <article class="noticia">
+            <img src="./sorvete.jpeg" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, soluta.</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolorum.
+        </article>
+        <article class="noticia">
+            <img src="./sorvete.jpeg" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, soluta.</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolorum.
+        </article>
+    </main>
+
+    <!--div chat de mensagem-->
+    <div class="chat_content">
+        <div id="mensagens">
+            <div class="mensagem ">
+
+                <img class="avatar" src="./avatar2.png" alt="Pedro Silva">
+                <div class="escrito_por">Pedro Silva</div>
+                <div class="mensagem__texto">
+                    <p>Olá, tudo bem?</p>
+                </div>
+                <div class="mensagem__hora">
+                    <p>00:50</p>
+                </div>
+            </div>
+            <div class="mensagem mensagem_minha">
+
+                <img class="avatar" src="./avatar1.png" alt="">
+                <div class="escrito_por">Eu</div>
+                <div class="mensagem__texto">
+                    <p>Estou bem sim, e você?</p>
+                </div>
+                <div class="mensagem__hora">
+                    <p>00:55</p>
+                </div>
+            </div>
+            <div class="mensagem ">
+                <img class="avatar" src="./avatar2.png" alt="Pedro Silva">
+                <div class="escrito_por">Pedro Silva</div>
+
+                <div class="mensagem__texto">
+                    <p>Vamos sair hoje? sabe conversar e Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                        ducimus</p>
+                </div>
+                <div class="mensagem__hora">
+                    <p>01:01</p>
+                </div>
+            </div>
+            <div class="mensagem mensagem_minha">
+
+                <img class="avatar" src="./avatar1.png" alt="">
+                <div class="escrito_por">Eu</div>
+                <div class="mensagem__texto">
+                    <p>Criatura ......</p>
+                </div>
+                <div class="mensagem__hora">
+                    <p>00:55</p>
+                </div>
+            </div>
+        </div>
+        <div id="formulario_chat">
+            <form action="">
+                <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

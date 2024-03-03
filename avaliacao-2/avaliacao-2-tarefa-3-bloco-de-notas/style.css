@@ -1,0 +1,44 @@
+body {
+    background-color: #212529;
+}
+
+.page-title {
+    color: #bbc2cc;
+    height: 12.5vh;
+    font-size: 4rem;
+}
+
+.main-content {
+    padding: 0 10vw;
+    height: 87.5vh;
+    padding-bottom: 10vh;
+}
+
+.task-column { 
+    background-color: #232a39; 
+    color: #bbc2cc;
+    border: 1px solid #575a5f;;
+}
+
+.accordion-button:focus, .accordion-button:not(.collapsed) {
+    background-color: #bbc2cc;
+    color: #232a39;
+}
+
+.alert-wrapper {
+    left: 10vw;
+    right: 10vw;
+    bottom: 2.5vh;
+}
+
+#to-do-list { max-height: 61.5vh; }
+.modal-title, .modal-body { outline: none; background-color: transparent; }
+#modal-task-content { min-height: 20vh; }
+#modal-delete-task { min-height: 10vh; }
+
+::-webkit-scrollbar { width: 12px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+    background-color: #bbc2cc; 
+    border-radius: 6px;
+}

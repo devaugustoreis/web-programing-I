@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin: 3vh;
+}
+
+.flags-box {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 5vh;
+}
+
+.flag {
+    width: 30vh;
+    height: 20vh;
+    border: 1px solid black;
+    display: flex;
+}
+
+/* FLAG'S NAMES */
+.flag-name {
+    position: absolute;
+    margin-top: 21vh;
+    width: 30vh;
+    text-align: center;
+}
+
+.japan > .flag-name {
+    margin-top: 24vh;
+}
+
+/* JAPAN */
+.japan {
+    justify-content: center;
+    align-items: center;
+}
+
+.japan > div {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    background-color: #e00614;
+}
+
+/* GERMANY, NETHERLANDS, ITALY */
+.germany > div, .netherlands > div, .italy > div {
+    flex-grow: 1;
+}
+
+/* GERMANY */
+.germany {
+    flex-direction: column;
+}
+
+.germany > div:first-child {
+    background-color: #000000;
+}
+
+.germany > div:nth-child(2) {
+    background-color: #de0000;
+}
+
+.germany > div:nth-child(3) {
+    background-color: #ffcf00;
+}
+
+/* NETHERLANDS */
+.netherlands {
+    flex-direction: column;
+}
+
+.netherlands > div:first-child {
+    background-color: #ae1c28;
+}
+
+.netherlands > div:nth-child(2) {
+    background-color: #fff;
+}
+
+.netherlands > div:nth-child(3) {
+    background-color: #21468b;
+}
+
+/* ITALY */
+.italy > div:first-child {
+    background-color: #006110;
+}
+
+.italy > div:nth-child(2) {
+    background-color: #fff;
+}
+
+.italy > div:nth-child(3) {
+    background-color: #e00023;
+}

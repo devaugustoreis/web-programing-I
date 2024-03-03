@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    width: 8vh;
+    height: 8vh;
+    display: inline-block;
+    border: 2px solid black;
+    margin: 5px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 8vh;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 5px 5px 3px 4px #c4b0e3;
+}
+
+#id1 > span:first-child {
+    background-color: red;
+}
+
+#id2 > span:last-child {
+    background-color: green;
+}
+
+#id3 > span:nth-child(2) {
+    background-color: blue;
+}
+
+#id4 > span:nth-last-child(2) {
+    background-color: rgb(238, 146, 226);
+}
+
+#id5 > span:nth-child(odd) {
+    background-color: yellow;
+}
+
+#id6 > span:nth-child(even) {
+    background-color: orange;
+}
+
+#id7 > span:nth-last-child(3) {
+    background-color: pink;
+}
+
+#id8 > span:nth-child(3n+2) {
+    background-color: brown;
+}
+
+#id9 > span:nth-child(3n+1) {
+    background-color: gray;
+}
+
+#id10 > span:nth-child(n+4) {
+    background-color: purple;
+}

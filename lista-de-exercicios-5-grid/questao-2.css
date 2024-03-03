@@ -1,0 +1,150 @@
+/* =============== CSS RESET / PRE-DEFINITIONS =============== */
+:root {
+    --primary-color: #292a34;
+    --secondary-color: #a7aaca;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+html {
+    font-size: 62.5%; /* A cada 1rem será considerado 10px */
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* =========================================================== */
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 220px auto 280px;
+    grid-template-rows: 90px auto 300px;
+    grid-template-areas: "header header header"
+                         " menu   main  aside "
+                         "footer footer footer";
+}
+
+/* =============== HEADER =============== */
+header {
+    grid-area: header;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =============== NAVIGATION MENU =============== */
+menu {
+    grid-area: menu;
+    background-color: #e7e8ea;
+    color: #000;
+}
+
+.menu-title {
+    font-size: 2.1rem;
+    font-weight: 400;
+    line-height: 3.15rem;
+    padding-left: 16px;
+    margin-top: 14px;
+    margin-bottom: 5px; 
+}
+
+.menu-item {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 2.55rem;
+    padding-left: 16px;
+}
+
+.menu-item:hover {
+    background-color: #b7b8b9;
+}
+
+/* =============== MAIN CONTENT =============== */
+main {
+    grid-area: main;
+    padding: 100px 25px;
+}
+
+main > h1 {
+    font-size: 3.6rem;
+    margin-bottom: 15px;
+}
+
+.grid-example {
+    height: 50vh;
+    background-color: rgb(207, 221, 247);
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 7fr 3fr;
+    grid-template-areas: "header header header"
+                         " menu   main  aside "
+                         "footer footer footer";
+    gap: 10px;
+}
+
+.grid-example > div {
+    background-color: rgb(139, 177, 247);
+}
+
+.header-example {
+    grid-area: header;
+}
+
+.menu-example {
+    grid-area: menu;
+}
+
+.main-example {
+    grid-area: main;
+}
+
+.aside-example {
+    grid-area: aside;
+}
+
+.footer-example {
+    grid-area: footer;
+}
+
+
+/* =============== ADVERTISEMENT =============== */
+aside {
+    grid-area: aside;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* =============== FOOTER =============== */
+footer {
+    grid-area: footer;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-group {
+    display: flex;
+    flex-direction: column;
+}

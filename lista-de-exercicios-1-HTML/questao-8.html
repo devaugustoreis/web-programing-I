@@ -1,0 +1,89 @@
+<!-- 8. Crie um formulário HTML que submeta os dados por método POST para uma página
+para cadastro de aluno
+formulário deve conter os seguintes campos, cada um com suas respectivas
+características:
+a) Nome Completo: Campo de texto obrigatório.
+b) Data de Nascimento: Campo de data obrigatório.
+c) Gênero: Conjunto de botões de opção com três escolhas (Masculino, Feminino,
+Outro), obrigatório.
+d) E-mail: Campo de e-mail obrigatório com validação.
+e) Número de Telefone: Campo de telefone com validação específica (10 dígitos).
+f) Endereço: Campo de área de texto com placeholder indicando como inserir o
+endereço.
+g) Curso de Interesse: Menu suspenso com várias opções de cursos para escolher,
+obrigatório.
+h) Termos e Condições: Caixa de seleção para aceitação dos termos e condições,
+obrigatório.
+i) Botão de Enviar e outro para limpar o formulário.
+j) A estilização com CSS é opcional, mas você pode experimentar para melhorar a
+aparência do formulário.
+Requisitos Adicionais:
+O formulário deve usar o método GET para enviar os dados.
+Todos os campos devem ser devidamente rotulados usando a tag <label>.
+Os campos obrigatórios devem ser marcados como tal, e o formulário não deve ser
+enviado a menos que esses campos estejam preenchidos corretamente.
+Utilize as tags e atributos apropriados para cada tipo de campo e suas características,
+conforme descrito. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 8</title>
+    <style>
+        input, p, textarea, select {
+            margin: 0;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="/cadastro_aluno.py" method="POST">
+        <label for="full-name">Nome Completo:</label>
+        <input type="text" name="full-name" id="full-name" required size="100"> <br>
+
+        <label for="birthdate">Data de Nascimento:</label>
+        <input type="date" name="birthdate" id="birthdate" required> <br>
+
+        <p>Gênero:</p>
+        <input type="radio" name="gender" id="male" value="Masculino" required> 
+        <label for="male">Masculino</label> <br>
+        <input type="radio" name="gender" id="female" value="Feminino"> 
+        <label for="female">Feminino</label> <br>
+        <input type="radio" name="gender" id="other" value="Outro"> 
+        <label for="other">Outro</label> <br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" size="60" required placeholder="nome@dominio.com"> <br>
+
+        <label for="tel">Telefone: </label>
+        <input type="tel" name="tel" id="tel" pattern="[0-9]{10}" size="10" maxlength="10" title="somente números" placeholder="0000000000"> <br>
+
+        <label for="address">Endereço:</label> <br>
+        <textarea name="address" id="address" cols="110" rows="5" placeholder="Rua dos Bobos nº0, Bela Vista, Gaspar, SC.&#10;Condomínio Casa engraçada - Apto 0000"></textarea> <br>
+
+        <label for="courses">Escolha um curso: </label>
+        <select name="courses" id="courses" required>
+            <option value="ADS">Análise e Desenvolvimento de Sistemas</option>
+            <option value="PG">Processos Gerenciais</option>
+            <option value="DM">Design de Moda</option>
+            <option value="PUB">Publicidade e Propaganda</option>
+            <option value="AC">Artes Cênicas</option>
+            <option value="EM">Engenharia Mecatrônica</option> 
+            <option value="EC">Engenharia Civil</option>
+            <option value="DTO">Direito</option> 
+            <option value="MED">Medicina</option> 
+            <option value="ADM">Administração</option> 
+        </select>
+        <br>
+
+        <input type="checkbox" name="privacy-terms" id="privacy-terms" required value="Termos Aceitos">
+        <label for="privacy-terms">Para enviar o formulário, você precisa aceitar nossos <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Termos e Condições</a>.</label> <br>
+
+        <input type="reset" value="Resetar Dados do Formulário"> <input type="submit" value="Enviar Formulário">
+    </form>
+    
+</body>
+</html>

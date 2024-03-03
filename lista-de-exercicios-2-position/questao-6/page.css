@@ -1,0 +1,46 @@
+/* ========================== HEADER ========================== */
+.header__content {
+    width: 50vw;
+    min-width: 50rem;
+    margin: 4vh auto 6vh auto;
+}
+
+.header__logo, .header__menu, .header__menu__item  {
+    display: inline-block;
+}
+
+.header__logo {
+    width: 45%;
+}
+
+.header__logo > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.header__menu__item {
+    margin-right: 2vw;
+    font-size: 2rem;
+}
+
+/* ========================== MAIN ========================== */
+.noticia {
+    width: 50vw;
+    min-width: 50rem;
+    background-color: #efebe8;
+    margin: 0 auto 5vh auto;
+    padding: 2vh;
+    border-radius: 4rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.noticia > img {
+    width: 80%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.noticia > p:first-of-type {
+    margin: 2vh 0;
+}

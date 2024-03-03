@@ -1,0 +1,217 @@
+<!-- 7. Sobre formulários responda
+a) Em um elemento formulário qual a finalidade do atributo action e method explique
+se precisar com gráficos para ilustrar.
+b) Qual é a diferença entre os métodos GET e POST?
+c) Como você faz um campo de formulário obrigatório?
+d) O que é a tag <label>, e por que é importante usá-la em um formulário?
+e) O que é o atributo placeholder, e como você pode usá-lo em um campo de formulário?
+f) Crie uma página HTML com campos de input de dados de diferentes tipos de input
+e um paragrafo antes de cada tipos explicando a finalidade do tipo e os atributos
+que podem ser utilizados.
+g) Como você pode garantir que os dados inseridos em um campo de formulário sigam
+um padrão específico (por exemplo, um endereço de e-mail válido)?
+h) Comente sobre as tags <button> de uma <input type=”button”> de um <input
+type=”submit”>
+i) Como você cria um menu suspenso (dropdown) em um formulário? -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 7</title>
+    <style>
+        h3 {
+            margin: 6px;
+        }
+
+        p {
+            margin: 3px 0;
+        }
+
+        .bold {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- 7 - LETRA A -->
+    <h3>Letra A</h3>
+
+    Em um formulário, o atributo "action" define para onde (qual rota) os dados do formulário em questão serão enviados.
+    Caso este parâmetro seja omitido, assume como valor padrão a própria rota atual. <br>
+    Enquanto isso, o atributo "method" define qual método HTTP será utilizado para realizar o envio. 
+    Se omitido, possui o valor GET como padrão.
+    <hr>
+
+    <!-- 7 - LETRA B -->
+    <h3>Letra B</h3>
+
+    GET <br>
+    O método GET é utilizado para enviar dados através da própria URL na forma de parâmetros. 
+    O pareamento dos parâmetros é feito entre os atributos "name" e "value" dos inputs do formulário. <br>
+    Uma desvantagem deste método é que o comprimento da URL é limitado a 2048 caracteres. <br>
+    Idealmente esté método não deve ser utilizado para se enviar dados sensíveis (já que ficam visíveis). <br> <br>
+
+    POST <br>
+    o método POST é utilizado para enviar dados através de uma transação (no corpo da requisição HTTP).
+    Assim como no get, as informações também são pareadas pelos atributos "name" e "value" do campo input. <br>
+    Diferentemente do get, não há limite de tamanho para informações enviadas através do método post. <br>
+    Embora este método não deixe os dados tão explicitamente vísiveis como no get (em que aparecem na rota),
+    é possível verificar o payload com os dados enviados na aba "network/redes" do navegador, portanto, ainda são
+    necessárias medidas de segurança adicionais para se enviar dados sensíveis.
+    <hr>
+
+    <!-- 7 - LETRA C -->
+    <h3>Letra C</h3>
+
+    Podemos tornar o preenchimento de um campo do formulário obrigatório ao adicionarmos o atributo "required" no mesmo. <br>
+
+    <input type="text" required title="Este campo é obrigatório.">
+    <hr>
+
+    <!-- 7 - LETRA D -->
+    <h3>Letra D</h3>
+
+    A tag label é utilizada para estabelecer-se um vínculo entre um campo do formulário (normalmente um input) e uma "legenda" que o descreve.
+    O paramento entre uma label e um campo é feito, respectivamente, através do atributo "for" e do "id" do campo. <br>
+    A utilização desta tag é importante, pois oferece as seguintes vantagens: <br>
+    - Possui grande importância semântica (principalmente considerando-se leitores de tela); <br>
+    - Permite uma maior acessabilidade a elementos pequenos, que podem ser selecionados ao clicar-se na label correspondente (referenciada através do atributo "for") <br>
+
+    <label for="first-name">Nome: </label>
+    <input type="text" id="first-name">
+    <hr>
+
+    <!-- 7 - LETRA E -->
+    <h3>Letra E</h3>
+
+    O atributo "placeholder" é utilizado para mostrar ao usuário um exemplo de como um campo deve ser preenchido. <br>
+    Por exemplo, você pode deixar o formato de telefone a ser utilizado "(00) 0 0000-0000" e esta informação permanecerá vísivel no campo até
+    que o usuário selecione o campo (em termos de seletores, acionar o "focus"), momento então em que o input se revelará vazio. <br>
+
+    <input type="tel" placeholder="(00) 0 0000-0000">
+    <hr>
+
+    <!-- 7 - LETRA F -->
+    <h3>Letra F</h3>
+
+    Abaixo estão listado alguns tipos de inputs que podem ser utilizados: <br>
+
+    <p class="bold">Type="text"</p>
+    <p>Input de uma única linha para textos</p>
+    <input type="text"> <br>
+
+    <p class="bold">Type="password"</p>
+    <p>Input para senhas que, por padrão, esconde (somente na tela) os caracteres digitados</p>
+    <input type="password"> <br>
+
+    <p class="bold">Type="radio"</p>
+    <p>Input do tipo "radio", que só permite que o usuário selecione uma dentre um grupo de opções. O vínculo entre as opções é feito através do atributo "name". <br>
+        O dado enviado é o contido no atributo "value" do campo.</p>
+    <input type="radio" id="opção-1" name="radio-example">
+    <input type="radio" id="opção-2" name="radio-example"> 
+    <input type="radio" id="opção-3" name="radio-example"><br>
+
+    <p class="bold">Type="checkbox"</p>
+    <p>Input do tipo "checkbox", que permite que o usuário selecione nenhuma ou várias opções de uma vez. <br>
+        O dado enviado é o contido no atributo "value" do campo.</p>
+    <input type="checkbox" value="opcao-1"> 
+    <input type="checkbox" value="opcao-2">
+    <input type="checkbox" value="opcao-3"><br>
+    
+    <p class="bold">Type="email"</p>
+    <p>Input específico para campos de e-mail. A depender do navegador, pode fornecer validação automática para este propósito (somente no envio).</p>
+    <input type="email"> <br>
+
+    <p class="bold">Type="tel"</p>
+    <p>Input específico para telefones. Em dispositivos mobile, pode oferecer um teclado especial para telefones.</p>
+    <input type="tel"> <br>
+
+    <p class="bold">Type="number"</p>
+    <p>Input que só aceita valores numéricos.</p>
+    <input type="number"> <br>
+
+    <p class="bold">Type="range"</p>
+    <p>Input para valores numéricos que contem um slider para ser manipulado. Por padrão, vai de 0 a 100.</p>
+    <input type="range" min="0" max="20" step="2" value="0"> <br>
+
+    <p class="bold">Type="color"</p>
+    <p>Input específico para selecionar uma cor. A depender do navegador, pode fornecer um "colorpicker" ou não.</p>
+    <input type="color"> <br>
+
+    <p class="bold">Type="date"</p>
+    <p>Input para campos de data. A depender do navegador, pode fornecer um "datepicker" (calendário) ou não.</p>
+    <input type="date"> <br>
+
+    <p class="bold">Type="file"</p>
+    <p>Input destinado ao envio de arquivos (contendo botão para realizar o upload).</p>
+    <input type="file"> <br>
+
+    <p class="bold">Type="url"</p>
+    <p>Input para endereços URL. A depender do navegador, pode fornecer validação automática para este propósito (somente no envio).</p>
+    <input type="url"> <br>
+
+    <p class="bold">Type="hidden"</p>
+    <p>Input que fica invisível ao usuário. (Contudo, pode ser manipulado facilmente através das ferramentas de desenvolvedor).</p>
+    <input type="hidden"> <br>
+
+    <p class="bold">Type="reset"</p>
+    <p>Input que cria um botão de reset capaz de restaurar todos os campos do formulário de volta para o valor padrão.</p>
+    <input type="reset"> <br>
+
+    <p class="bold">Type="submit"</p>
+    <p>Input que cria um botão (submit) para enviar todos os dados do formulário.</p>
+    <input type="submit"> <br> <br> 
+
+    Abaixo estão listados alguns atributos que podem ser combinados com alguns dos inputs acima: <br> <br>
+    <span class="bold">value - </span><span>Define um valor padrão para o campo.</span> <br>
+    <span class="bold">checked - </span><span>Torna o campo pré-selecionado ao carregar a página. (Compatível com radio e checkbox).</span> <br>
+    <span class="bold">disabled - </span><span>Desabilita o campo.</span> <br>
+    <span class="bold">min - </span><span>Especifica um valor mínimo para um campo. Pode esperar valores diferentes a depender do input (por exemplo, date VS number/range).</span> <br>
+    <span class="bold">max - </span><span>Especifica um valor máximo para um campo. Pode esperar valores diferentes a depender do input (por exemplo, date VS number/range).</span> <br>
+    <span class="bold">step - </span><span>Determina um valor de "salto" para campos em que for pertinente.</span> <br>
+    <span class="bold">minlength - </span><span>Especifica o mínimo de caracteres para um campo. Compatível com os types text, email, search, password, tel e url.</span> <br>
+    <span class="bold">maxlength - </span><span>Especifica o máximo de caracteres para um campo. Compatível com os types text, email, search, password, tel e url.</span> <br>
+    <span class="bold">pattern - </span><span>Especifica um padrão para o campo. Pode ser combinado com expressões regulares.</span> <br>
+    <span class="bold">readonly - </span><span>Torna o campo somente em leitura (usuário não pode selecionar ou alterar seu valor).</span> <br>
+    <span class="bold">required - </span><span>Torna o campo obrigatório.</span> <br>
+    <span class="bold">size - </span><span>Determina o tamanho (largura em caracteres) do campo.</span> <br>
+    <hr>
+
+    <!-- 7 - LETRA G -->
+    <h3>Letra G</h3>
+
+    Para garantir que os dados em um campo sigam um padrão específico, podemos utilizar o atributo "pattern" em conjunto com expressões regulares (regEx). <br>
+
+    <input type="number" name="CEP" id="CEP" pattern="[0-9]{5}-[0-9]{3}" title="00000-000">
+    <hr>
+
+    <!-- 7 - LETRA H -->
+    <h3>Letra H</h3>
+
+    A única diferença entre as tags "button" e "input type='button'" está nas informações de estilo automaticamente associadas (pelo navegador) a cada um destes elementos,
+    porém essencialmente as duas podem ser utilizadas com as mesmas finalidades. <br>
+    Por outro lado, um "input type='submit'" diferencia-se das outras duas citadas, pois o "type=submit" torna este elemento como um gatilho capaz de disparar/enviar as 
+    informações do formulário ao ser clicado.  <br>
+    Obs.: Uma tag "button" com "type='submit'" também se torna um gatilho que envia o formulário. 
+    <hr> 
+
+    <!-- 7 - LETRA I -->
+    <h3>Letra I</h3>
+
+    Podemos utilizar a tag "select" para criar um menu suspenso em um formulário. Dentro da tag "select", precisamos adicionar uma tag "option" para cada uma das opções. 
+    Importante frisar que os dados enviados no formulário não são o texto das "options", mas o valor contido no atributo "value".
+
+    <label for="fruits">Escolha uma fruta:</label>
+    <select name="fruits" id="fruits">
+        <option>Maçã</option>
+        <option>Laranja</option>
+        <option>Banana</option>
+        <option>Morango</option>
+        <option>Uva</option>
+    </select>
+
+</body>
+</html>
