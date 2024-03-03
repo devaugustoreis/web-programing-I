@@ -1,17 +1,17 @@
 # web-programing-I
 <p float="left">
-    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" width="130" />
-    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" width="130" />
-    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="Javascript" width="130" />
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="Javascript" />
 </p>
 
 This repository contains the code and exercises I developed for the "web development 1" classes in the "System Analysis and Development" graduation at IFSC. This subject was taken in the second semester of 2023 and its focus was to learn and practice plain HTML, CSS and Javascript, without any frameworks. Some of the topics covered were:
 
 - **HTML:** Basic DOM structure
-- **HTML - common tags:** <div>, <span>, <a>, <img>, <ol>, <ul>, <li>, <table>, <thead>, <tbody>, <tfoot>, <tr>, <td>, <h1> to <h6>, <p>, <form>, <input>, <label>, <select>, <option>, <button>, <hr>, <br>, etc
+- **HTML - common tags:** div, span, a, img, ol, ul, li, table, thead, tbody, tfoot, tr, td, h1 to h6, p, form, input, label, select, option, button, hr, br, etc
 - **HTML - tags common attributes:** href, src, title, type, target, alt, name, id, class, value, required, placeholder, size, maxlength, minlength, rows, cols, rowspan, colspan, action, method, etc
 - **CSS:** inline, internal or external
-- **CSS - selectors and pseudo-classes:** "tag", .class, #id, *, father > child, element + next-brother, [attribute=value], :hover, :first-child, :first-of-type, :nth-child, :not, :active, :disabled, :visited, etc
+- **CSS - selectors and pseudo-classes:** "tag", .class, #id, *, father > child, element + next-brother, \[attribute=value], :hover, :first-child, :first-of-type, :nth-child, :not, :active, :disabled, :visited, etc
 - **CSS - common properties:** display, position, flexbox, grid, etc
 - **JS - common DOM events**: click, mouseover, mouseenter, mouseout, mouseleave, mousemove, change, keyup, keydown, keypress, focus, blur, etc
 - **JS - common methods**: querySelector, getElementById, getElementsByClassName, createElement, appendChild, push, join, trim, splice, pop, isNan, parseInt, etc
